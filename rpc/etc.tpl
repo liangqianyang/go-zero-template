@@ -1,6 +1,10 @@
 Name: {{.serviceName}}.rpc
 ListenOn: 0.0.0.0:8080
-Etcd:
-  Hosts:
-  - 127.0.0.1:2379
-  Key: {{.serviceName}}.rpc
+TimeBeforeQuit: 20
+Apollo:
+  AppID: {{.serviceName}}.rpc
+  Cluster: default
+  Ip: xxx.xxx.xxx.xxx
+  Namespace: application
+  Secret: 3000d40d70129eb3f28d544526
+  IsBackup: false
